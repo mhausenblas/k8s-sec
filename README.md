@@ -34,9 +34,9 @@ Tooling:
 Further reading:
 
 - [Just say no to root (in containers)](https://opensource.com/article/18/3/just-say-no-root-containers)
-- Exploring Container Mechanisms Through the Story of a Syscall ([slides](https://schd.ws/hosted_files/kccnceu18/46/Exploring container mechanisms through the story of a syscall.pdf) | [video](https://www.youtube.com/watch?v=1Tl-NURLoq4))
+- Exploring Container Mechanisms Through the Story of a Syscall ([slides](https://schd.ws/hosted_files/kccnceu18/46/Exploring%20container%20mechanisms%20through%20the%20story%20of%20a%20syscall.pdf) | [video](https://www.youtube.com/watch?v=1Tl-NURLoq4))
 - [Improving your Kubernetes Workload Security](https://www.youtube.com/watch?v=T_NxDXAdbfo)
-Container Isolation at Scale (Introducing gVisor) ([slides](https://schd.ws/hosted_files/kccnceu18/47/Container Isolation at Scale.pdf) | [video](https://www.youtube.com/watch?v=pWyJahTWa4I))
+Container Isolation at Scale (Introducing gVisor) ([slides](https://schd.ws/hosted_files/kccnceu18/47/Container%20Isolation%20at%20Scale.pdf) | [video](https://www.youtube.com/watch?v=pWyJahTWa4I))
 
 ## Authentication and authorization
 
