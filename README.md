@@ -1,5 +1,12 @@
 # Kubernetes Security: from Image Hygiene to Network Policies
 
+- [Building container images](#building-container-images)
+- [Running containers](#running-containers)
+- [Authentication and authorization](#authentication-and-authorization)
+- [Communication](#communication)
+- [Apps](#apps)
+- [Securing the control plane](#securing-the-control-plane)
+
 ## Building container images
 
 Tooling:
