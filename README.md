@@ -119,3 +119,24 @@ Further reading:
 - [Lessons from the Cryptojacking Attack at Tesla](https://blog.redlock.io/cryptojacking-tesla) 
 - [Hacking and Hardening Kubernetes Clusters by Example](https://www.youtube.com/watch?v=vTgQLzeBfRU) 
 - [What Does “Production Ready” Really Mean for a Kubernetes Cluster](https://weave.works/blog/what-does-production-ready-really-mean-for-a-kubernetes-cluster)
+
+## References
+
+Kubernetes resources related to security (v1.10):
+
+- [Namespace](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#namespace-v1-core)
+- [Secret](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#secret-v1-core)
+- [ResourceQuota](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#resourcequota-v1-core)
+- [ServiceAccount](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#serviceaccount-v1-core)
+- [Role](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#role-v1-rbac-authorization-k8s-io) / [ClusterRole](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#clusterrole-v1-rbac-authorization-k8s-io)
+- [RoleBinding](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#rolebinding-v1-rbac-authorization-k8s-io) / [ClusterRoleBinding](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#clusterrolebinding-v1-rbac-authorization-k8s-io)
+- [PodSecurityPolicy](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#podsecuritypolicy-v1beta1-extensions)
+- [NetworkPolicy](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.10/#networkpolicy-v1-networking-k8s-io)
+
+Useful `kubectl` commands:
+
+- `kubectl create secret`
+- `kubectl create serviceaccount`
+- `kubectl create role`
+- `kubectl create rolebinding`
+- `kubectl auth can-i`
