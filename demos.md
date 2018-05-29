@@ -28,20 +28,21 @@ APISERVERTOKEN=$(cat /var/run/secrets/kubernetes.io/serviceaccount/token)
 curl -H "Authorization: Bearer $APISERVERTOKEN"  https://kubernetes.default
 ```
 
-Create SA, explore (incl. secret and jump into pod):
+Create service account:
 
  ```bash
 $ kubectl -n=demo create serviceaccount mysa
 ```
 
-Run pod with SA:
+Run pod with service account and explore contents:
 
 ```bash
 $ kubectl -n=demo apply -f res/podwithsa.yaml
 $ kubectl -n=demo get secret
 $ kubectl -n=demo describe secret mysa-token-d6tjw
 ```
-Also, check JWT token via https://jwt.io
+
+Look into the pod how the service account info has been made available via a volume mount:
 
 ```bash
 $ kubectl -n=demo  exec -it podwithsa -- sh
@@ -49,7 +50,10 @@ cd /var/run/secrets/kubernetes.io/serviceaccount/
 cat token
 ```
 
-Role/rolebinding:
+Also, check JWT token via https://jwt.io
+
+
+Next, create a role and rolebinding for being able to view and list pods:
 
 ```bash
 $ kubectl -n=demo create role podreader --verb=get --verb=list --resource=pods
