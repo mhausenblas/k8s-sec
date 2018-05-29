@@ -6,6 +6,7 @@
 - [Communication](#communication)
 - [Apps](#apps)
 - [Securing the control plane](#securing-the-control-plane)
+- [References](#references)
 
 ## Building container images
 
