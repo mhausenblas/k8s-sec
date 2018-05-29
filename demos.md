@@ -41,6 +41,7 @@ $ kubectl -n=demo apply -f res/podwithsa.yaml
 $ kubectl -n=demo get secret
 $ kubectl -n=demo describe secret mysa-token-d6tjw
 ```
+Also, check JWT token via https://jwt.io
 
 ```bash
 $ kubectl -n=demo  exec -it podwithsa -- sh
