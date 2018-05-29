@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: podasroot
+  name: podasroot 
 spec:
   containers:
   - name: shell
-    image: centos:7
+    image: alpine:3.7
     command:
-      - "bin/bash"
+      - "sh"
       - "-c"
       - "sleep 10000"

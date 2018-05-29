@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: podasroot
+  name: podasusr
 spec:
   securityContext:
-    runAsUser: 1000
+    runAsUser: 1234
   containers:
   - name: shell
-    image: centos:7
+    image: alpine:3.7
     command:
-      - "bin/bash"
+      - "sh"
       - "-c"
-      - "sleep 10000"
+      - "sleep 10001"

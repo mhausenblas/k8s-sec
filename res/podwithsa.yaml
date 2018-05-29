@@ -6,8 +6,8 @@ spec:
   serviceAccountName: mysa
   containers:
   - name: shell
-    image: centos:7
+    image: alpine:3.7
     command:
-      - "bin/bash"
+      - "sh"
       - "-c"
       - "sleep 10000"
